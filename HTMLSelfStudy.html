@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+    <head>
+        <title>Autoformation HTML</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+        <h1>Autoformation HTML</h1>
+        <a href="./index.html">Accueil</a>
+        <nav>
+            <h2>Sommaire :</h2>
+            <ul>
+                <li><a href="#tag">Balises HTML</a></li>
+                <li><a href="#comment">Commentaire</a></li>
+                <li><a href="#structure">Structuration HTML</a></li>
+                <li><a href="#attribute">Attributs</a></li>
+                <li><a href="#webLearningDiagram">Diagramme d'apprentissage web 2020</a></li>
+            </ul>
+        </nav>
+
+        <section id="tag">
+            <h2>Balises HTML:</h2>
+            <ul>
+                <li><code>&lthtml&gt</code> : Définit un document html.</li>
+                <li><code>&lthead&gt</code> : Définit l’en-tête d’un document.</li>
+                <li><code>&lttitle&gt</code> : Définit le titre d’un document.</li>
+                <li><code>&ltmeta&gt</code> : Définit des informations relatives au document.</li>
+                <li><code>&ltlink&gt</code> : Définit les relations entre les documents.</li>
+                <li><code>&ltbody&gt</code> : Définit le corps de la page.</li>
+                <li><code>&ltp&gt</code> : Définit un paragraphe.</li>
+                <li><code>&lth1&gt à &lth6&gt</code> : Définit un titre par degré importance de 1 à 6.</li>
+                <li><code>&lta&gt</code> : Définit un lien.</li>
+                <li><code>&ltul&gt</code> : Définit une liste non-ordonné.</li>
+                <li><code>&ltol&gt</code> : Définit une liste ordonné.</li>
+                <li><code>&ltli&gt</code> : Élément d’une liste.</li>
+                <li><code>&ltcode&gt</code> : Mise en forme d’un texte en code informatique.</li>
+                <li><code>&ltpre&gt</code> : Texte pré-formaté.</li>
+                <li><code>&ltdiv&gt</code> : Définit un calque ou une section.</li>
+                <li><code>&ltnav&gt</code> : Définit un groupe de liens de navigation.</li>
+                <li><code>&ltarticle&gt</code> : Définit un article.</li>
+                <li><code>&ltsection&gt</code> : Définit une section.</li>
+                <li><code>&ltaside&gt</code> : Définit une partie latérale au contenu.</li>
+                <li><code>&ltheader&gt</code> : Définit le haut d’une section ou d’une page.</li>
+                <li><code>&ltfooter&gt</code> : Définit le bas d’un section ou d’une page.</li>
+                <li><code>&ltbr&gt</code> : Saut de ligne.</li>
+                <li><code>&ltnav&gt</code> : Définit un groupe de liens de navigation.</li>
+                <li><code>&ltimg&gt</code> : Définit une image.</li>
+                <li><code>&lttable&gt</code> : Définit un tableau.
+                    <ul>
+                        <li><code>&ltthead&gt</code> : Définit le haut d’un tableau.</li>
+                        <li><code>&lttbody&gt</code> : Définit le corps d’un tableau.</li>
+                        <li><code>&lttfoot&gt</code> : Définit le bas d’un tableau.</li>
+                        <li><code>&lttr&gt</code> : Définit une ligne de tableau.</li>
+                        <li><code>&lttd&gt</code> : Définit une cellule d’un tableau.</li>
+                        <li><code>&ltth&gt</code> : Définit une cellule d’en-tête d’un tableau (à apprendre).</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section id="comment">
+            <h2>Commentaires</h2>
+            <p>On peut écrire un commentaire dans le code HTML avec :<br><code>&lt!-- Mon super commentaire --&gt</code><br>
+                Attention cependant car tout le monde peut voir un code source d'une page HTML donc éviter les données sensibles.
+            </p>
+        </section>
+        <section id="structure">
+            <h2>Structuration HTML</h2>
+            <img src="./image/h5d-sectioning-flowchart.png" alt="schema selection balises"/>
+            <br>
+            <img src="./image/structurationHtml1.PNG" alt="schema structuration page"/>
+            <br>
+            <img src="./image/structurationHtml2.PNG" alt="schema structuration page"/>
+        </section>
+        <section id="attribute">
+            <h2>Attribut</h2>
+            <p title="exempleTitle">
+                L'attribut "title" donne des informations supplémentaires sur un élément.<br>
+                <code>&ltp title="exempleTitle"&gt</code>
+            </p>
+            <p>
+                L'attribut "id" permet de donner un id à une balise.<br>
+                <code>&ltsection id="monSuperID"&gt</code><br>
+                Un ID sert notamment pour les ancres. Tout ID est évidemment unique (sur la même page).
+            </p>
+            <p>
+                L'attribut "href" permet de définir le lien d'une balise &lta&gt.<br>
+                <code>&lta href="monSuperLien"&gtLe texte du lien&lt/a&gt</code><br>
+                On peut également faire référence à une autre page HTML ou bien un élément de la page (Ancre) dans href afin de faciliter la navigation.
+            </p>
+            <section title="imageAttribute">
+                <h3>Attributs de la balise &ltimg&gt</h3>
+                <p>
+                    L'attribut "src" définit la source de l'image à afficher.<br>
+                    <code>&ltimg src="lienDeMonImage"/&gt</code>
+                </p>
+                <p>
+                    L'attribut "alt" sur une balise &ltimg&gt affiche un texte alternatif si l'image n'est pas chargée.<br>
+                    <code>&ltimg src="lienDeMonImage" alt="Mon texte alternatif"/&gt</code>
+                </p>
+            </section> 
+        </section>
+        <section id="webLearningDiagram">
+            <a href="https://coggle.it/diagram/XfeRbWj7xy3dsEX8/t/web-development-in-2020">diagram d'apprentissage du Web development diagram en 2020</a>
+        </section>
+    </body>
+</html>
