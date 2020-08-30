@@ -16,9 +16,33 @@
         <nav>
             <h2>Sommaire :</h2>
             <ul>
-                <li><a href="#selector">Selecteurs</a></li>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#selector">Sélecteurs</a></li>
+                <li><a href="#property">Propriétés</a></li>
+                <li><a href="#tips">Tips et bonnes pratiques</a></li>
+                <li><a href="#webLearningLink">Liens utiles</a></li>
             </ul>
         </nav>
+
+        <section id="intro">
+            <h2>Introduction</h2>
+            <p>
+                CSS veut dire Cascade Style Sheet.
+            </p>
+            <p>
+                On lie une page HTML à un fichier CSS à l'aide de la ligne :<br>
+                <code>&lt;link rel=”stylesheet” href=”monFichier.css”&gt;</code>
+            </p>
+            <p>
+                On peut écrire un commentaire de la facon suivante :<br>
+                <code>/* Mon super commentaire */</code>
+            </p>
+            <img src="./image/block_inline.png" alt="block inline img">
+            <p>
+                Tout éléments héritent des styles de leur parent.<br>
+                En cas de conflit, le style le plus proche de l'élément en question va être appliqué. 
+            </p>
+        </section>
 
         <section id="selector">
             <h2>Sélecteurs</h2>
@@ -68,6 +92,149 @@
                 <li>:visited : Sélectionne tout les liens visités.</li>
                 <li>:hover : Sélectionne tout éléments où la souris se trouve dessus.</li>
             </ul>
+        </section>
+        <section id="property">
+            <h2>Propriétés</h2>
+            <section>
+                <h3>Généralités</h3>
+                <p>
+                    Les tailles sont exprimées en px, pt (fixe) ou en ex,em,% (relatif).<br>
+                    <a href="https://developer.mozilla.org/fr/docs/Web/CSS/length" target="_blank">Lien sur les tailles</a>
+                </p>
+                <p>
+                    inherit : hérite de la propriété de son parent pour la propriété concernée.
+                </p>
+                <p>
+                    none : comportement par défaut.
+                </p>
+                <p>
+                    color: couleur de l’élément. Certaine couleurs sont déjà définis et constante selon leur nom.<br>
+                    <img src="./image/colors.png" alt="colors"><br>
+                    On peut également les définirs en hexadécimal : #3478BC Ou en code RGB : rgb(250,150,150).
+                </p>
+                <p>
+                    opacity : valeur entre 0 et 1. L'opacité du texte.<br>
+                    Possibilité de préciser avec le format RGBA : rgba(250,150,100,0.9);
+                </p>
+                <p>
+                    <h4>Shorthand et Longhand</h4>
+                    <img src="./image/shorthand_longhand.png" alt="shorthand longhand">
+                <p>
+            </section>
+            <section>
+                <h3>Font</h3>
+                <p>
+                    font-size : la taille de la police.
+                </p>
+                <p>
+                    font-style : normal, italic, oblique, inherit.<br>
+                    italic : certaine police ne peuvent pas être en italique qui est un état du texte, oblique lui force le comportement car transformation du texte.
+                </p>
+                <p>
+                    font-weight : bold,bolder,lighter,normal,inherit.
+                </p>
+                <p>
+                    line-height : espacement entre les lignes. (mettre environ x1.5 la taille du texte).
+                </p>
+                <p>
+                    font-family : la police du texte. possibilité d’en mettre plusieur si le navigateur ne supporte pas les précédentes.<br>
+                    <code>font-family : Tahoma, Garamond, sans-serif;</code><br>
+                    Certaine police sont basique et incluse dans tous les navigateurs : les Web Safe Font. Généralement on en inclut toujours une à la fin d’une font-family.
+                </p>
+            </section>
+            <section>
+                <h3>Text</h3>
+                <p>
+                    text-align: left; center; right; justify, inherit; permet d’aligner le texte.<br>
+                    justify oblige le texte à prendre toute la ligne.
+                </p>
+                <p>
+                    text-decoration : none, underline, overline, blink (pas sur tout les navigateur), inherit, line-through<br>
+                    Ajoute une décoration au texte. 
+                </p>
+                <p>
+                    text-transform: lowercase,uppercase,capitalize,none,inherit;<br>
+                    Permet de changer les caractère d’un texte.
+                </p>
+                <p>
+                    text-indent : ajoute une indentation au texte. Peut avoir une valeur négative.
+                </p>
+                <p>
+                    letter-spacing: espace entre les lettre d’un texte.
+                </p>
+                <p>
+                    word-spacing: espace entre les mots.
+                </p>
+                <p>
+                    text-shadow: 1px 2px 3px black;<br> 
+                    Déplacement horizontal, vertical, la diffusion de l’ombre et sa couleur.
+                </p>
+            </section>
+            <section>
+                <h3>Modèle des boites</h3>
+                <p>
+                    Possibilité de préciser une location : top, bottom, left, right, combinaison...<br>
+                    <img src="./image/boxModel.png" alt="box model"><br>
+                    height : La hauteur par défaut d’un élément est définit par son contenu.<br>
+                    width : La largeur par défaut d’un élément est définit par son type (block ou inline).
+                </p>
+            </section>
+            <section>
+                <h3>Border</h3>
+                <p>
+                    border-width : épaisseur de la bordure.
+                </p>
+                <p>
+                    border-style : certaines valeurs sont mal supportées.<br>
+                    <img src="./image/borderStyle.png" alt="Border style">
+                </p>
+                <p>
+                    border-color : couleur de la bordure. Fonctionne comme color.
+                </p>
+                <p>
+                    border-radius : l’arrondissement des angles. 
+                </p>
+                <p>
+                    box-shadow : marche comme text-shadow.<br>
+                    On peut lui donner un sens : inset ou outset.
+                </p>
+            </section>
+            <section>
+                <h3>Position et Placement</h3>
+                <p>
+                    float : permet de faire flotter un élément. Positionne et aligne les autres éléments en conséquence. (right left et none)<br>
+                    <img src="./image/float.png" alt="float">
+                </p>
+                <p>
+                    clear : both, right, left : reprend le comportement par défaut pour l’élément. (permet d’ignorer un float par exemple)
+                </p>
+                <p>
+                    display : inline,none, inline-block : permet de changer le type de l'élément. (block -> inline, très important à bien maîtriser)
+                </p>
+            </section>
+        </section>
+        <section id=tips>
+            <h2>Tips et bonnes pratiques</h2>
+            <p>
+                Pour isoler du contenu on peut utiliser les balises &lt;div&gt; et &lt;span&gt;.
+            </p>
+            <p>
+                padding : Ne dois pas être utilisé pour “positionner” un élément.
+            </p>
+            <p>
+                position : static, absolute, fixed, relative.<br>
+                absolute permet alors de modifier les propriétés : top, bottom, left, right.<br>
+                fixed : permet de placer l’élément selon la fenêtre (et non la page). l’élément est ainsi toujours visible.<br>
+                relative : permet de modifier les propriétés top, bottom, left, right selon sa position initiale.
+            </p>
+            <p>
+                z-index : permet de dire quel élément est affiché au dessus plutôt qu’un autre. (priorité)
+            </p>
+        </section>
+        <section id=webLearningLink>
+            <h2>Liens utiles</h2>
+            <a href="https://youtu.be/8FqZZrbnwkM?t=3578" target="_blank">Liens tuto CSS part 1</a><br>
+            <a href="https://www.youtube.com/watch?v=HN4-7k0zC-Y" target="_blank">Liens tuto CSS part 2</a>
         </section>
     </body>
 </html>
