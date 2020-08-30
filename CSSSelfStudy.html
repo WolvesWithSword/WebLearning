@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+    <head>
+        <title>Autoformation CSS</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="CSSstyle.css">
+
+    </head>
+
+    <body>
+        <h1>Autoformation CSS</h1>
+        <a href="./index.html">Accueil</a>
+
+        <nav>
+            <h2>Sommaire :</h2>
+            <ul>
+                <li><a href="#selector">Selecteurs</a></li>
+            </ul>
+        </nav>
+
+        <section id="selector">
+            <h2>Sélecteurs</h2>
+            <ul>
+                <li>.class : Sélectionne tout les éléments de la classe "class".</li>
+                <li>.class1.class2 : Sélectionne tout les éléments qui ont la class1 et la class2 en attribut.</li>
+                <li>.class1 .class2 : Sélectionne tout les éléments qui ont la class2 dans class1 (pas forcément directement).</li>
+                <li>#id : Sélectionne tout les éléments qui ont l'id donné en attribut.</li>
+                <li>* : Sélectionne tout les éléments.</li>
+                <li>element (ex: p, .class, #id) : Sélectionne tout les éléments "element".
+                    <ul>
+                        <li>element.class : Sélectionne tout les éléments "element" avec la classe donnée.</li>
+                        <li>element1,element2 : Sélectionne tout les éléments "element1" et "element2.</li>
+                        <li>element1 element2 : Sélectionne tout les éléments "element2" dans "element1.</li>
+                        <li>element1>element2 : Sélectionne tout les éléments "element2" où le parent est "element1".</li>
+                        <li>element1+element2 : Sélectionne tout les éléments "element2" qui sont directement après "element1".</li>
+                        <li>element1~element2 : Sélectionne tout les éléments "element2" qui sont précédés par "element1".</li>
+                    </ul>
+                </li>
+                <li>[attribute] : Sélectionne tout les éléments avec l'attribut "attribute".
+                    <ul>
+                        <li>[attribute=value] : Sélectionne tout les éléments avec l'attribut "attribute" avec la valeur "value".</li>
+                        <li>[attribute~=value] : Sélectionne tout les éléments avec l'attribut "attribute" qui contienne le mot "value".</li>
+                        <li>[attribute|=value] : Sélectionne tout les éléments avec l'attribut "attribute" qui commence avec le mot "value".</li>
+                        <li>[attribute^=value] : Sélectionne tout les éléments avec l'attribut "attribute" qui commence avec la sous-chaine "value".</li>
+                        <li>[attribute$=value] : Sélectionne tout les éléments avec l'attribut "attribute" qui finisse avec la sous-chaine "value".</li>
+                        <li>[attribute*=value] : Sélectionne tout les éléments avec l'attribut "attribute" qui contienne la sous-chaine "value".</li>
+                    </ul>
+                </li>
+                <li>::after : Ajoute quelque chose après l'élément.</li>
+                <li>::before : Ajoute quelque chose avant l'élément.</li>
+                <li>:empty : Sélectionne tout les éléments qui n'ont pas d'enfant.</li>
+                <li>:first-child : Sélectionne les éléments qui sont le premier enfant de leur parent.</li>
+                <li>::first-letter : Sélectionne la première lettre de l'élément.</li>
+                <li>::first-line : Sélectionne la première ligne de l'élément.</li>
+                <li>:first-of-type : Sélectionne les éléments qui sont les premiers éléments de ce type chez leur parent.</li>
+                <li>:last-child : Sélectionne les éléments qui sont les derniers enfant de leur parent.</li>
+                <li>:last-of-type : Sélectionne les éléments qui sont les derniers éléments de ce type chez leur parent.</li>
+                <li>:link : Sélectionne tout les liens qui n'ont pas été visités.</li>
+                <li>:not(selector) : Sélectionne tout les éléments qui ne sont pas "selector".</li>
+                <li>:nth-child(n) : Sélectionne tout les éléments qui sont le n-ième fils de leur parent.</li>
+                <li>:nth-last-child(n) : Sélectionne tout les éléments qui sont le n-ième fils de leur parent en partant du dernier.</li>
+                <li>:nth-of-type : Sélectionne tout les éléments qui sont le n-ième de ce type chez leur parent.</li>
+                <li>:nth-last-of-type : Sélectionne tout les éléments qui sont le n-ième de ce type chez leur parent en partant du dernier.</li>
+                <li>:only-child : Sélectionne tout les éléments qui sont le seul fils de leur parent.</li>
+                <li>:only-of-type : Sélectionne tout les éléments qui sont les seuls à être de ce type chez leur parent.</li>
+                <li>:visited : Sélectionne tout les liens visités.</li>
+                <li>:hover : Sélectionne tout éléments où la souris se trouve dessus.</li>
+            </ul>
+        </section>
+    </body>
+</html>
