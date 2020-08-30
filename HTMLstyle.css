@@ -1,5 +1,5 @@
 code {
-    background-color: #dfdfdf;
+    background-color: #d9e3e6;
 }
 
 body{
@@ -9,7 +9,37 @@ body{
     background-color: rgba(218, 167, 102, 0.295);
     color: #032046;
 }
+/*===================== Title =================*/
+#contentTitle{
 
+    text-align: center;
+}
+
+#contentTitle h1{
+    display: inline;
+    text-align: center;
+    font-size: 40px;
+    color : #0a3f5c;
+    position: relative;
+    bottom: 36px;
+}
+
+
+#contentTitle img{
+    height: 100px;
+    width: 100px;
+}
+
+/*====================== Sommary ====================*/
+
+#sommary h2{
+    text-align : left;
+    margin-bottom: 0px;
+}
+
+#sommary ul{
+    margin-top : 5px;
+}
 
 /*========================Nav bar =====================*/
 header{
@@ -47,18 +77,31 @@ header{
     color: white;
 }
 
-  /*========================content =====================*/
-  .content{
+/*========================content =====================*/
+.content{
       margin: 2%;
-  }
-
-h1, h2, h3{
-    text-align: center;
-    margin: 0px;
 }
-section{
+
+
+
+/* ==================== main section ========*/
+.mainSection{
     box-shadow: 0px 0px 6px black;
     padding: 20px 20px;
     margin-top: 25px;
     background-color: rgba(255, 255, 255, 0.15);
+}
+
+.mainSection h2 {
+    text-align: left;
+    margin : 0px;
+}
+
+.mainSection>*{
+    margin-left: 20px;
+}
+
+
+.mainSection h3~*{
+    margin-left: 40px;
 }

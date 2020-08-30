@@ -6,7 +6,6 @@
         <title>Autoformation HTML</title>
         <meta charset="utf-8"/>
         <link rel="stylesheet" href="HTMLstyle.css">
-
     </head>
 
     <body>
@@ -20,8 +19,12 @@
             </nav>
         </header>
         <div class="content">
-            <h1>Autoformation HTML</h1>
-            <nav>
+            <div id="contentTitle">
+                <h1>Autoformation HTML</h1>
+                <img src="./image/html5.png" alt="html5">   
+            </div>
+            
+            <nav id="sommary">
                 <h2>Sommaire :</h2>
                 <ul>
                     <li><a href="#intro">Introduction</a></li>
@@ -33,8 +36,8 @@
                     <li><a href="#webLearningLink">Liens utiles</a></li>
                 </ul>
             </nav>
-            <section id="intro">
-                <h2>Introduction</h2>
+            <section class="mainSection" id="intro">
+                <h2>Introduction :</h2>
                 <p>
                     Une page html commence toujours avec la balise &lt;!DOCTYPE html&gt;.<br/>
                     Cela permet de préciser que le type de cette page est du HTML.
@@ -43,8 +46,8 @@
                     HTML signifie HyperText Markup Language.
                 </p>
             </section>
-            <section id="tag">
-                <h2>Balises HTML:</h2>
+            <section class="mainSection" id="tag">
+                <h2>Balises HTML :</h2>
                 <ul>
                     <li><code>&lt;html&gt;</code> : Définit un document html.</li>
                     <li><code>&lt;head&gt;</code> : Définit l’en-tête d’un document.</li>
@@ -90,22 +93,22 @@
                     <li><code>&lt;span&gt;</code> : Sert à englober du contenu.</li>
                 </ul>
             </section>
-            <section id="comment">
-                <h2>Commentaires</h2>
+            <section class="mainSection" id="comment">
+                <h2>Commentaires :</h2>
                 <p>On peut écrire un commentaire dans le code HTML avec :<br/><code>&lt;!-- Mon super commentaire --&gt;</code><br/>
                     Attention cependant car tout le monde peut voir un code source d'une page HTML donc éviter les données sensibles.
                 </p>
             </section>
-            <section id="structure">
-                <h2>Structuration HTML</h2>
+            <section class="mainSection" id="structure">
+                <h2>Structuration HTML :</h2>
                 <img src="./image/h5d-sectioning-flowchart.png" alt="schema selection balises"/>
                 <br/>
                 <img src="./image/structurationHtml1.PNG" alt="schema structuration page"/>
                 <br/>
                 <img src="./image/structurationHtml2.PNG" alt="schema structuration page"/>
             </section>
-            <section id="attribute">
-                <h2>Attribut</h2>
+            <section class="mainSection" id="attribute">
+                <h2>Attributs :</h2>
                 <section>
                     <h3>Attributs universel</h3>
                     <p title="exempleTitle">
@@ -177,8 +180,8 @@
                     </p>
                 </section>
             </section>
-            <section id="tips">
-                <h2>Tips et bonnes pratiques</h2>
+            <section class="mainSection" id="tips">
+                <h2>Tips et bonnes pratiques :</h2>
                 <p>
                     On ne met qu'une balise &lt;h1&gt; par document HTML.
                 </p>
@@ -205,8 +208,8 @@
                     <li><a href="https://jigsaw.w3.org/css-validator/" target="_blank">Validateur CSS</a></li>
                 </ul>
             </section>
-            <section id="webLearningLink">
-                <h2>Liens utiles</h2>
+            <section class="mainSection" id="webLearningLink">
+                <h2>Liens utiles :</h2>
                 <a href="https://youtu.be/8FqZZrbnwkM" target="_blank">Videos tutoriel HTML</a><br/>
             </section>
         </div>
