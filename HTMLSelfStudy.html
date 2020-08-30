@@ -15,14 +15,25 @@
         <nav>
             <h2>Sommaire :</h2>
             <ul>
+                <li><a href="#intro">Introduction</a></li>
                 <li><a href="#tag">Balises HTML</a></li>
                 <li><a href="#comment">Commentaire</a></li>
                 <li><a href="#structure">Structuration HTML</a></li>
                 <li><a href="#attribute">Attributs</a></li>
-                <li><a href="#webLearningDiagram">Diagramme d'apprentissage web 2020</a></li>
+                <li><a href="#tips">Tips et bonnes pratiques</a></li>
+                <li><a href="#webLearningLink">Liens utiles</a></li>
             </ul>
         </nav>
-
+        <section id="intro">
+            <h2>Introduction</h2>
+            <p>
+                Une page html commence toujours avec la balise &lt!DOCTYPE html&gt.<br>
+                Cela permet de préciser que le type de cette page est du HTML.
+            </p>
+            <p>
+                HTML signifie HyperText Markup Language.
+            </p>
+        </section>
         <section id="tag">
             <h2>Balises HTML:</h2>
             <ul>
@@ -60,6 +71,12 @@
                         <li><code>&ltth&gt</code> : Définit une cellule d’en-tête d’un tableau (à apprendre).</li>
                     </ul>
                 </li>
+                <li><code>&ltdl&gt</code> : Définit une liste de définition</li>
+                <li><code>&ltdt&gt</code> : Définit le titre d'une définition</li>
+                <li><code>&ltdd&gt</code> : Définit le texte d'une définition</li>
+                <li><code>&ltstrong&gt</code> : Permet d’indiquer à un moteur de recherche qu’un contenu est particulièrement important.</li>
+                <li><code>&ltem&gt</code> : Ressemble à strong mais moins important.</li>
+                <li><code>&ltmark&gt</code> : Sert à faire ressortir du contenu. </li>
             </ul>
         </section>
         <section id="comment">
@@ -78,20 +95,23 @@
         </section>
         <section id="attribute">
             <h2>Attribut</h2>
-            <p title="exempleTitle">
-                L'attribut "title" donne des informations supplémentaires sur un élément.<br>
-                <code>&ltp title="exempleTitle"&gt</code>
-            </p>
-            <p>
-                L'attribut "id" permet de donner un id à une balise.<br>
-                <code>&ltsection id="monSuperID"&gt</code><br>
-                Un ID sert notamment pour les ancres. Tout ID est évidemment unique (sur la même page).
-            </p>
-            <p>
-                L'attribut "href" permet de définir le lien d'une balise &lta&gt.<br>
-                <code>&lta href="monSuperLien"&gtLe texte du lien&lt/a&gt</code><br>
-                On peut également faire référence à une autre page HTML ou bien un élément de la page (Ancre) dans href afin de faciliter la navigation.
-            </p>
+            <section>
+                <h3>Attributs universel</h3>
+                <p title="exempleTitle">
+                    L'attribut "title" donne des informations supplémentaires sur un élément.<br>
+                    <code>&ltp title="exempleTitle"&gt</code>
+                </p>
+                <p>
+                    L'attribut "id" permet de donner un id à une balise.<br>
+                    <code>&ltsection id="monSuperID"&gt</code><br>
+                    Un ID sert notamment pour les ancres. Tout ID est évidemment unique (sur la même page).
+                </p>
+                <p>
+                    L'attribut universel "class" indique une liste de classes associées à l'élément courant. Les classes permettent de manipuler les éléments,<br>
+                    via CSS ou JavaScript en utilisant les sélecteurs de classe ou des fonctions telles que document.getElementsByClassName.<br>
+                    <code>&ltp class="maSuperClasse"&gtMon super texte&ltp&gt</code>
+                </p>
+            </section>
             <section title="imageAttribute">
                 <h3>Attributs de la balise &ltimg&gt</h3>
                 <p>
@@ -103,9 +123,77 @@
                     <code>&ltimg src="lienDeMonImage" alt="Mon texte alternatif"/&gt</code>
                 </p>
             </section> 
+            <section>
+                <h3>Attributs de la balise &ltmeta&gt</h3>
+                <p>
+                    L'attribut "charset" spécifie l'encodage des caractères du document HTML.<br>
+                    <code>&ltmeta charset="utf-8"&gt</code>
+                </p>
+            </section>
+            <section>
+                <h3>Attributs de la balise &lta&gt</h3>
+                <p>
+                    L'attribut "href" permet de définir le lien d'une balise &lta&gt.<br>
+                    <code>&lta href="monSuperLien"&gtLe texte du lien&lt/a&gt</code><br>
+                    On peut également faire référence à une autre page HTML ou bien un élément de la page (Ancre) dans href afin de faciliter la navigation.
+                </p>
+                <p>
+                    Pour créer une ancre il suffit de donner l'id de la cible avec un # devant dans href.
+                </p>
+                <p>
+                    Pour créer un lien de téléchargment, il suffit de donner le lien du fichier à télécharger dans href.<br>
+                    Celui-ci étant différent d'un fichier.htlm, il sera téléchargé.
+                </p>
+                <p>
+                    Pour ouvrire un lien dans une nouvelle page, on utiliser l'attribut "target" avec la valeur "blank".<br>
+                    <code>&lta href="monSuperLien" target="_blank"&gtmon super texte&lt/a&gt</code>
+                </p>
+                <p>
+                    Pour qu'un lien envoie un mail à une certaine adresse, on ajoute "mailto:" puis le mail dans l'attribut "href".<br>
+                    <code>&lta href ="mailto:exemple@mail.com"&gtmon super texte&lt/a&gt</code>
+                </p>
+            </section>
+            <section>
+                <h3>Autres</h3>
+                <p>
+                    l'attribut "lang" précise la langue utilisée pour le contenu de la page, il est placé sur la balise &lthtml&gt.<br>
+                    <code>&lthtml lang="fr"&gt</code><br>
+                    Une langue bien indiquée sera utile aux synthèses vocales (pour adopter le bon accent).
+                </p>
+            </section>
         </section>
-        <section id="webLearningDiagram">
-            <a href="https://coggle.it/diagram/XfeRbWj7xy3dsEX8/t/web-development-in-2020">diagram d'apprentissage du Web development diagram en 2020</a>
+        <section id="tips">
+            <h2>Tips et bonnes pratiques</h2>
+            <p>
+                On ne met qu'une balise &lth1&gt par document HTML.
+            </p>
+            <p>
+                Ne jamais mettre de contenu dans une balise &lthX&gt juste pour l'avoir en grand et gras.<br>
+                C'est le CSS qu'il faut utiliser.
+            </p>
+            <p>
+                Dans une liste de définition, &ltdt&gt se trouve toujours avant &ltdd&gt.
+            </p>
+            <p>
+                Les balise &ltstrong&gt &ltem&gt et &ltmark&gt servent au référencement de site. (Moins utilisés de nos jours).
+            </p>
+            <p>
+                Un page web peut s’afficher différemment selon les navigateurs (moins maintenant) et sur de vieux navigateurs certaines fonctionnalités ne marcheront pas.<br>
+                Il faut donc tester son code sur plusieurs navigateurs. 
+            </p>
+            <p>
+                Il faut toujours avoir un code HTML et CSS valide car critère de référencement.<br>
+                On peut alors utiliser des validateurs de code : 
+                <ul>
+                    <li><a href="https://validator.w3.org/" target="_blank">Validateur HTML</a></li>
+                    <li><a href="https://jigsaw.w3.org/css-validator/" target="_blank">Validateur CSS</a></li>
+                </ul>
+            </p>
+        </section>
+        <section id="webLearningLink">
+            <h2>Liens utiles</h2>
+            <a href="https://coggle.it/diagram/XfeRbWj7xy3dsEX8/t/web-development-in-2020" target="_blank">Diagramme d'apprentissage du Web en 2020</a><br>
+            <a href="https://youtu.be/8FqZZrbnwkM" target="_blank">Videos tutoriel HTML CSS partie 1</a><br>
         </section>
     </body>
 </html>
