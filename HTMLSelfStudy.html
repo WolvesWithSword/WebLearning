@@ -10,195 +10,205 @@
     </head>
 
     <body>
-        <h1>Autoformation HTML</h1>
-        <a href="./index.html">Accueil</a>
-        <nav>
-            <h2>Sommaire :</h2>
-            <ul>
-                <li><a href="#intro">Introduction</a></li>
-                <li><a href="#tag">Balises HTML</a></li>
-                <li><a href="#comment">Commentaire</a></li>
-                <li><a href="#structure">Structuration HTML</a></li>
-                <li><a href="#attribute">Attributs</a></li>
-                <li><a href="#tips">Tips et bonnes pratiques</a></li>
-                <li><a href="#webLearningLink">Liens utiles</a></li>
-            </ul>
-        </nav>
-        <section id="intro">
-            <h2>Introduction</h2>
-            <p>
-                Une page html commence toujours avec la balise &lt;!DOCTYPE html&gt;.<br/>
-                Cela permet de préciser que le type de cette page est du HTML.
-            </p>
-            <p>
-                HTML signifie HyperText Markup Language.
-            </p>
-        </section>
-        <section id="tag">
-            <h2>Balises HTML:</h2>
-            <ul>
-                <li><code>&lt;html&gt;</code> : Définit un document html.</li>
-                <li><code>&lt;head&gt;</code> : Définit l’en-tête d’un document.</li>
-                <li><code>&lt;title&gt;</code> : Définit le titre d’un document.</li>
-                <li><code>&lt;meta&gt;</code> : Définit des informations relatives au document.</li>
-                <li><code>&lt;link&gt;</code> : Définit les relations entre les documents.</li>
-                <li><code>&lt;body&gt;</code> : Définit le corps de la page.</li>
-                <li><code>&lt;p&gt;</code> : Définit un paragraphe.</li>
-                <li><code>&lt;h1&gt; à &lt;h6&gt;</code> : Définit un titre par degré importance de 1 à 6.</li>
-                <li><code>&lt;a&gt;</code> : Définit un lien.</li>
-                <li><code>&lt;ul&gt;</code> : Définit une liste non-ordonné.</li>
-                <li><code>&lt;ol&gt;</code> : Définit une liste ordonné.</li>
-                <li><code>&lt;li&gt;</code> : Élément d’une liste.</li>
-                <li><code>&lt;code&gt;</code> : Mise en forme d’un texte en code informatique.</li>
-                <li><code>&lt;pre&gt;</code> : Texte pré-formaté.</li>
-                <li><code>&lt;div&gt;</code> : Définit un calque ou une section.</li>
-                <li><code>&lt;nav&gt;</code> : Définit un groupe de liens de navigation.</li>
-                <li><code>&lt;article&gt;</code> : Définit un article.</li>
-                <li><code>&lt;section&gt;</code> : Définit une section.</li>
-                <li><code>&lt;aside&gt;</code> : Définit une partie latérale au contenu.</li>
-                <li><code>&lt;header&gt;</code> : Définit le haut d’une section ou d’une page.</li>
-                <li><code>&lt;footer&gt;</code> : Définit le bas d’un section ou d’une page.</li>
-                <li><code>&lt;br&gt;</code> : Saut de ligne.</li>
-                <li><code>&lt;nav&gt;</code> : Définit un groupe de liens de navigation.</li>
-                <li><code>&lt;img&gt;</code> : Définit une image.</li>
-                <li><code>&lt;table&gt;</code> : Définit un tableau.
-                    <ul>
-                        <li><code>&lt;thead&gt;</code> : Définit le haut d’un tableau.</li>
-                        <li><code>&lt;tbody&gt;</code> : Définit le corps d’un tableau.</li>
-                        <li><code>&lt;tfoot&gt;</code> : Définit le bas d’un tableau.</li>
-                        <li><code>&lt;tr&gt;</code> : Définit une ligne de tableau.</li>
-                        <li><code>&lt;td&gt;</code> : Définit une cellule d’un tableau.</li>
-                        <li><code>&lt;th&gt;</code> : Définit une cellule d’en-tête d’un tableau (à apprendre).</li>
-                    </ul>
-                </li>
-                <li><code>&lt;dl&gt;</code> : Définit une liste de définition</li>
-                <li><code>&lt;dt&gt;</code> : Définit le titre d'une définition</li>
-                <li><code>&lt;dd&gt;</code> : Définit le texte d'une définition</li>
-                <li><code>&lt;strong&gt;</code> : Permet d’indiquer à un moteur de recherche qu’un contenu est particulièrement important.</li>
-                <li><code>&lt;em&gt;</code> : Ressemble à strong mais moins important.</li>
-                <li><code>&lt;mark&gt;</code> : Sert à faire ressortir du contenu.</li>
-                <li><code>&lt;div&gt;</code> : Sert à englober un bloc de contenu.</li>
-                <li><code>&lt;span&gt;</code> : Sert à englober du contenu.</li>
-            </ul>
-        </section>
-        <section id="comment">
-            <h2>Commentaires</h2>
-            <p>On peut écrire un commentaire dans le code HTML avec :<br/><code>&lt;!-- Mon super commentaire --&gt;</code><br/>
-                Attention cependant car tout le monde peut voir un code source d'une page HTML donc éviter les données sensibles.
-            </p>
-        </section>
-        <section id="structure">
-            <h2>Structuration HTML</h2>
-            <img src="./image/h5d-sectioning-flowchart.png" alt="schema selection balises"/>
-            <br/>
-            <img src="./image/structurationHtml1.PNG" alt="schema structuration page"/>
-            <br/>
-            <img src="./image/structurationHtml2.PNG" alt="schema structuration page"/>
-        </section>
-        <section id="attribute">
-            <h2>Attribut</h2>
-            <section>
-                <h3>Attributs universel</h3>
-                <p title="exempleTitle">
-                    L'attribut "title" donne des informations supplémentaires sur un élément.<br/>
-                    <code>&lt;p title="exempleTitle"&gt;</code>
+        <header>
+            <img id="logo" src="./image/logoStudy.png" />
+            <nav id="navBar">
+                <a href="./index.html">Accueil</a>
+                <a class="activePage" href="./HTMLSelfStudy.html">HTML</a>
+                <a href="./CSSSelfStudy.html">CSS</a>
+
+            </nav>
+        </header>
+        <div class="content">
+            <h1>Autoformation HTML</h1>
+            <nav>
+                <h2>Sommaire :</h2>
+                <ul>
+                    <li><a href="#intro">Introduction</a></li>
+                    <li><a href="#tag">Balises HTML</a></li>
+                    <li><a href="#comment">Commentaire</a></li>
+                    <li><a href="#structure">Structuration HTML</a></li>
+                    <li><a href="#attribute">Attributs</a></li>
+                    <li><a href="#tips">Tips et bonnes pratiques</a></li>
+                    <li><a href="#webLearningLink">Liens utiles</a></li>
+                </ul>
+            </nav>
+            <section id="intro">
+                <h2>Introduction</h2>
+                <p>
+                    Une page html commence toujours avec la balise &lt;!DOCTYPE html&gt;.<br/>
+                    Cela permet de préciser que le type de cette page est du HTML.
                 </p>
                 <p>
-                    L'attribut "id" permet de donner un id à une balise.<br/>
-                    <code>&lt;section id="monSuperID"&gt;</code><br/>
-                    Un ID sert notamment pour les ancres. Tout ID est évidemment unique (sur la même page).
-                </p>
-                <p>
-                    L'attribut universel "class" indique une liste de classes associées à l'élément courant. Les classes permettent de manipuler les éléments,<br/>
-                    via CSS ou JavaScript en utilisant les sélecteurs de classe ou des fonctions telles que document.getElementsByClassName.<br/>
-                    <code>&lt;p class="maSuperClasse"&gt;Mon super texte&lt;p&gt;</code>
+                    HTML signifie HyperText Markup Language.
                 </p>
             </section>
-            <section title="imageAttribute">
-                <h3>Attributs de la balise &lt;img&gt;</h3>
-                <p>
-                    L'attribut "src" définit la source de l'image à afficher.<br/>
-                    <code>&lt;img src="lienDeMonImage"/&gt;</code>
-                </p>
-                <p>
-                    L'attribut "alt" sur une balise &lt;img&gt; affiche un texte alternatif si l'image n'est pas chargée.<br/>
-                    <code>&lt;img src="lienDeMonImage" alt="Mon texte alternatif"/&gt;</code>
-                </p>
-            </section> 
-            <section>
-                <h3>Attributs de la balise &lt;meta&gt;</h3>
-                <p>
-                    L'attribut "charset" spécifie l'encodage des caractères du document HTML.<br/>
-                    <code>&lt;meta charset="utf-8"&gt;</code>
+            <section id="tag">
+                <h2>Balises HTML:</h2>
+                <ul>
+                    <li><code>&lt;html&gt;</code> : Définit un document html.</li>
+                    <li><code>&lt;head&gt;</code> : Définit l’en-tête d’un document.</li>
+                    <li><code>&lt;title&gt;</code> : Définit le titre d’un document.</li>
+                    <li><code>&lt;meta&gt;</code> : Définit des informations relatives au document.</li>
+                    <li><code>&lt;link&gt;</code> : Définit les relations entre les documents.</li>
+                    <li><code>&lt;body&gt;</code> : Définit le corps de la page.</li>
+                    <li><code>&lt;p&gt;</code> : Définit un paragraphe.</li>
+                    <li><code>&lt;h1&gt; à &lt;h6&gt;</code> : Définit un titre par degré importance de 1 à 6.</li>
+                    <li><code>&lt;a&gt;</code> : Définit un lien.</li>
+                    <li><code>&lt;ul&gt;</code> : Définit une liste non-ordonné.</li>
+                    <li><code>&lt;ol&gt;</code> : Définit une liste ordonné.</li>
+                    <li><code>&lt;li&gt;</code> : Élément d’une liste.</li>
+                    <li><code>&lt;code&gt;</code> : Mise en forme d’un texte en code informatique.</li>
+                    <li><code>&lt;pre&gt;</code> : Texte pré-formaté.</li>
+                    <li><code>&lt;div&gt;</code> : Définit un calque ou une section.</li>
+                    <li><code>&lt;nav&gt;</code> : Définit un groupe de liens de navigation.</li>
+                    <li><code>&lt;article&gt;</code> : Définit un article.</li>
+                    <li><code>&lt;section&gt;</code> : Définit une section.</li>
+                    <li><code>&lt;aside&gt;</code> : Définit une partie latérale au contenu.</li>
+                    <li><code>&lt;header&gt;</code> : Définit le haut d’une section ou d’une page.</li>
+                    <li><code>&lt;footer&gt;</code> : Définit le bas d’un section ou d’une page.</li>
+                    <li><code>&lt;br&gt;</code> : Saut de ligne.</li>
+                    <li><code>&lt;nav&gt;</code> : Définit un groupe de liens de navigation.</li>
+                    <li><code>&lt;img&gt;</code> : Définit une image.</li>
+                    <li><code>&lt;table&gt;</code> : Définit un tableau.
+                        <ul>
+                            <li><code>&lt;thead&gt;</code> : Définit le haut d’un tableau.</li>
+                            <li><code>&lt;tbody&gt;</code> : Définit le corps d’un tableau.</li>
+                            <li><code>&lt;tfoot&gt;</code> : Définit le bas d’un tableau.</li>
+                            <li><code>&lt;tr&gt;</code> : Définit une ligne de tableau.</li>
+                            <li><code>&lt;td&gt;</code> : Définit une cellule d’un tableau.</li>
+                            <li><code>&lt;th&gt;</code> : Définit une cellule d’en-tête d’un tableau (à apprendre).</li>
+                        </ul>
+                    </li>
+                    <li><code>&lt;dl&gt;</code> : Définit une liste de définition</li>
+                    <li><code>&lt;dt&gt;</code> : Définit le titre d'une définition</li>
+                    <li><code>&lt;dd&gt;</code> : Définit le texte d'une définition</li>
+                    <li><code>&lt;strong&gt;</code> : Permet d’indiquer à un moteur de recherche qu’un contenu est particulièrement important.</li>
+                    <li><code>&lt;em&gt;</code> : Ressemble à strong mais moins important.</li>
+                    <li><code>&lt;mark&gt;</code> : Sert à faire ressortir du contenu.</li>
+                    <li><code>&lt;div&gt;</code> : Sert à englober un bloc de contenu.</li>
+                    <li><code>&lt;span&gt;</code> : Sert à englober du contenu.</li>
+                </ul>
+            </section>
+            <section id="comment">
+                <h2>Commentaires</h2>
+                <p>On peut écrire un commentaire dans le code HTML avec :<br/><code>&lt;!-- Mon super commentaire --&gt;</code><br/>
+                    Attention cependant car tout le monde peut voir un code source d'une page HTML donc éviter les données sensibles.
                 </p>
             </section>
-            <section>
-                <h3>Attributs de la balise &lt;a&gt;</h3>
-                <p>
-                    L'attribut "href" permet de définir le lien d'une balise &lt;a&gt;.<br/>
-                    <code>&lt;a href="monSuperLien"&gt;Le texte du lien&lt;/a&gt;</code><br/>
-                    On peut également faire référence à une autre page HTML ou bien un élément de la page (Ancre) dans href afin de faciliter la navigation.
-                </p>
-                <p>
-                    Pour créer une ancre il suffit de donner l'id de la cible avec un # devant dans href.
-                </p>
-                <p>
-                    Pour créer un lien de téléchargment, il suffit de donner le lien du fichier à télécharger dans href.<br/>
-                    Celui-ci étant différent d'un fichier.htlm, il sera téléchargé.
-                </p>
-                <p>
-                    Pour ouvrire un lien dans une nouvelle page, on utiliser l'attribut "target" avec la valeur "blank".<br/>
-                    <code>&lt;a href="monSuperLien" target="_blank"&gt;mon super texte&lt;/a&gt;</code>
-                </p>
-                <p>
-                    Pour qu'un lien envoie un mail à une certaine adresse, on ajoute "mailto:" puis le mail dans l'attribut "href".<br/>
-                    <code>&lt;a href ="mailto:exemple@mail.com"&gt;mon super texte&lt;/a&gt;</code>
-                </p>
-                <p>
-                    Pour qu'un lien amène à un numéro de téléphone, on ajoute "tel:" puis le numéro dans l'attribut "href".<br/>
-                    <code>&lt;a href ="tel:0123456789"&gt;mon super texte&lt;/a&gt;</code>
-                </p>
+            <section id="structure">
+                <h2>Structuration HTML</h2>
+                <img src="./image/h5d-sectioning-flowchart.png" alt="schema selection balises"/>
+                <br/>
+                <img src="./image/structurationHtml1.PNG" alt="schema structuration page"/>
+                <br/>
+                <img src="./image/structurationHtml2.PNG" alt="schema structuration page"/>
             </section>
-            <section>
-                <h3>Autres</h3>
-                <p>
-                    l'attribut "lang" précise la langue utilisée pour le contenu de la page, il est placé sur la balise &lt;html&gt;.<br/>
-                    <code>&lt;html lang="fr"&gt;</code><br/>
-                    Une langue bien indiquée sera utile aux synthèses vocales (pour adopter le bon accent).
-                </p>
+            <section id="attribute">
+                <h2>Attribut</h2>
+                <section>
+                    <h3>Attributs universel</h3>
+                    <p title="exempleTitle">
+                        L'attribut "title" donne des informations supplémentaires sur un élément.<br/>
+                        <code>&lt;p title="exempleTitle"&gt;</code>
+                    </p>
+                    <p>
+                        L'attribut "id" permet de donner un id à une balise.<br/>
+                        <code>&lt;section id="monSuperID"&gt;</code><br/>
+                        Un ID sert notamment pour les ancres. Tout ID est évidemment unique (sur la même page).
+                    </p>
+                    <p>
+                        L'attribut universel "class" indique une liste de classes associées à l'élément courant. Les classes permettent de manipuler les éléments,<br/>
+                        via CSS ou JavaScript en utilisant les sélecteurs de classe ou des fonctions telles que document.getElementsByClassName.<br/>
+                        <code>&lt;p class="maSuperClasse"&gt;Mon super texte&lt;p&gt;</code>
+                    </p>
+                </section>
+                <section title="imageAttribute">
+                    <h3>Attributs de la balise &lt;img&gt;</h3>
+                    <p>
+                        L'attribut "src" définit la source de l'image à afficher.<br/>
+                        <code>&lt;img src="lienDeMonImage"/&gt;</code>
+                    </p>
+                    <p>
+                        L'attribut "alt" sur une balise &lt;img&gt; affiche un texte alternatif si l'image n'est pas chargée.<br/>
+                        <code>&lt;img src="lienDeMonImage" alt="Mon texte alternatif"/&gt;</code>
+                    </p>
+                </section> 
+                <section>
+                    <h3>Attributs de la balise &lt;meta&gt;</h3>
+                    <p>
+                        L'attribut "charset" spécifie l'encodage des caractères du document HTML.<br/>
+                        <code>&lt;meta charset="utf-8"&gt;</code>
+                    </p>
+                </section>
+                <section>
+                    <h3>Attributs de la balise &lt;a&gt;</h3>
+                    <p>
+                        L'attribut "href" permet de définir le lien d'une balise &lt;a&gt;.<br/>
+                        <code>&lt;a href="monSuperLien"&gt;Le texte du lien&lt;/a&gt;</code><br/>
+                        On peut également faire référence à une autre page HTML ou bien un élément de la page (Ancre) dans href afin de faciliter la navigation.
+                    </p>
+                    <p>
+                        Pour créer une ancre il suffit de donner l'id de la cible avec un # devant dans href.
+                    </p>
+                    <p>
+                        Pour créer un lien de téléchargment, il suffit de donner le lien du fichier à télécharger dans href.<br/>
+                        Celui-ci étant différent d'un fichier.htlm, il sera téléchargé.
+                    </p>
+                    <p>
+                        Pour ouvrire un lien dans une nouvelle page, on utiliser l'attribut "target" avec la valeur "blank".<br/>
+                        <code>&lt;a href="monSuperLien" target="_blank"&gt;mon super texte&lt;/a&gt;</code>
+                    </p>
+                    <p>
+                        Pour qu'un lien envoie un mail à une certaine adresse, on ajoute "mailto:" puis le mail dans l'attribut "href".<br/>
+                        <code>&lt;a href ="mailto:exemple@mail.com"&gt;mon super texte&lt;/a&gt;</code>
+                    </p>
+                    <p>
+                        Pour qu'un lien amène à un numéro de téléphone, on ajoute "tel:" puis le numéro dans l'attribut "href".<br/>
+                        <code>&lt;a href ="tel:0123456789"&gt;mon super texte&lt;/a&gt;</code>
+                    </p>
+                </section>
+                <section>
+                    <h3>Autres</h3>
+                    <p>
+                        l'attribut "lang" précise la langue utilisée pour le contenu de la page, il est placé sur la balise &lt;html&gt;.<br/>
+                        <code>&lt;html lang="fr"&gt;</code><br/>
+                        Une langue bien indiquée sera utile aux synthèses vocales (pour adopter le bon accent).
+                    </p>
+                </section>
             </section>
-        </section>
-        <section id="tips">
-            <h2>Tips et bonnes pratiques</h2>
-            <p>
-                On ne met qu'une balise &lt;h1&gt; par document HTML.
-            </p>
-            <p>
-                Ne jamais mettre de contenu dans une balise &lt;hX&gt; juste pour l'avoir en grand et gras.<br/>
-                C'est le CSS qu'il faut utiliser.
-            </p>
-            <p>
-                Dans une liste de définition, &lt;dt&gt; se trouve toujours avant &lt;dd&gt;.
-            </p>
-            <p>
-                Les balise &lt;strong&gt; &lt;em&gt; et &lt;mark&gt; servent au référencement de site. (Moins utilisés de nos jours).
-            </p>
-            <p>
-                Un page web peut s’afficher différemment selon les navigateurs (moins maintenant) et sur de vieux navigateurs certaines fonctionnalités ne marcheront pas.<br/>
-                Il faut donc tester son code sur plusieurs navigateurs. 
-            </p>
-            <p>
-                Il faut toujours avoir un code HTML et CSS valide car critère de référencement.<br/>
-                On peut alors utiliser des validateurs de code : 
-            </p>
-            <ul>
-                <li><a href="https://validator.w3.org/" target="_blank">Validateur HTML</a></li>
-                <li><a href="https://jigsaw.w3.org/css-validator/" target="_blank">Validateur CSS</a></li>
-            </ul>
-        </section>
-        <section id="webLearningLink">
-            <h2>Liens utiles</h2>
-            <a href="https://youtu.be/8FqZZrbnwkM" target="_blank">Videos tutoriel HTML</a><br/>
-        </section>
+            <section id="tips">
+                <h2>Tips et bonnes pratiques</h2>
+                <p>
+                    On ne met qu'une balise &lt;h1&gt; par document HTML.
+                </p>
+                <p>
+                    Ne jamais mettre de contenu dans une balise &lt;hX&gt; juste pour l'avoir en grand et gras.<br/>
+                    C'est le CSS qu'il faut utiliser.
+                </p>
+                <p>
+                    Dans une liste de définition, &lt;dt&gt; se trouve toujours avant &lt;dd&gt;.
+                </p>
+                <p>
+                    Les balise &lt;strong&gt; &lt;em&gt; et &lt;mark&gt; servent au référencement de site. (Moins utilisés de nos jours).
+                </p>
+                <p>
+                    Un page web peut s’afficher différemment selon les navigateurs (moins maintenant) et sur de vieux navigateurs certaines fonctionnalités ne marcheront pas.<br/>
+                    Il faut donc tester son code sur plusieurs navigateurs. 
+                </p>
+                <p>
+                    Il faut toujours avoir un code HTML et CSS valide car critère de référencement.<br/>
+                    On peut alors utiliser des validateurs de code : 
+                </p>
+                <ul>
+                    <li><a href="https://validator.w3.org/" target="_blank">Validateur HTML</a></li>
+                    <li><a href="https://jigsaw.w3.org/css-validator/" target="_blank">Validateur CSS</a></li>
+                </ul>
+            </section>
+            <section id="webLearningLink">
+                <h2>Liens utiles</h2>
+                <a href="https://youtu.be/8FqZZrbnwkM" target="_blank">Videos tutoriel HTML</a><br/>
+            </section>
+        </div>
     </body>
 </html>
