@@ -1,0 +1,63 @@
+h1{
+    text-align: center;
+    font-size: 70px;
+    color : #0a3f5c;
+}
+
+body{
+    margin: 0px;
+    /*background-color: #eae2b7;*/
+    /*background-color: rgba(85, 51, 7, 0.295);*/
+    background-color: rgba(218, 167, 102, 0.295);
+    color: #032046;
+}
+
+/*========================Nav bar =====================*/
+header{
+    background-color: #3d5a80;
+    overflow: hidden;
+    padding: 0px;
+}
+
+#logo{
+    height: 36px;
+    padding: 8px 7px 0px 5px;
+}
+
+#navBar{
+    float: right;
+}
+
+#navBar a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 19px;
+    font-size: 17px;
+}
+
+#navBar a:hover {
+    background-color: #98c1d9;
+    color: black;
+  }
+
+.activePage {
+    background-color: #59a7aa;
+    color: white;
+}
+
+/*========================content =====================*/
+.content{
+    margin: 2%;
+    text-align: center;
+    font-size: 30px;
+}
+
+.content img[src*=logoStudy]{
+    width: 240px;
+    height: 200px;
+    background-color: #59a7aa;
+    border-radius: 5rem;
+}

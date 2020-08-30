@@ -117,3 +117,11 @@ header{
     max-width: 70%;
     height: auto;
 }
+
+#webLearningLink h2 {
+    margin-bottom: 5px;
+}
+
+#webLearningLink a{
+    line-height: 27px;
+}
