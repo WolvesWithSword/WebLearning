@@ -105,3 +105,15 @@ header{
 .mainSection h3~*{
     margin-left: 40px;
 }
+
+.mainSection h2~*{
+    margin-top: 12px;
+}
+
+#structure img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+    height: auto;
+}
