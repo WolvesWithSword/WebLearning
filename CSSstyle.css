@@ -95,6 +95,10 @@ header{
     margin : 0px;
 }
 
+.mainSection h4{
+    margin : 0px;
+}
+
 .mainSection>*{
     margin-left: 20px;
 }
@@ -115,4 +119,22 @@ header{
 
 #webLearningLink a{
     line-height: 27px;
+}
+
+/*================ img ================= */
+#intro img{
+    width: 600px;
+}
+
+#property img[src*=color]{
+    height: 350px;
+}
+
+#property img[src*=hand]{
+    height: 220px;
+}
+
+.content img {
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
