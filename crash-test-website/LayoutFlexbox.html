@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+    <head>
+        <title>Layout Flexbox Crash-test</title>
+        <meta charset="utf-8"/>
+        <style>
+            /*========================Nav bar =====================*/
+            header{
+                background-color: #3d5a80;
+                overflow: hidden;
+                padding: 0px;
+            }
+
+            #logo{
+                height: 36px;
+                padding: 8px 7px 0px 5px;
+            }
+
+            #navBar{
+                float: right;
+            }
+
+            #navBar a{
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                text-decoration: none;
+                padding: 15px 19px;
+                font-size: 17px;
+            }
+
+            #navBar a:hover {
+                background-color: #98c1d9;
+                color: black;
+            }
+            /* ================================================= */
+
+            body{
+                color: white;
+                background: rgb(58,58,58);
+                font-family: Helvetica Neue, Helvetica, Arial;
+                margin : 0px;
+            }
+
+            .content header{
+                background:black;
+                padding : 10px 20px;
+            }
+
+            .content section{
+                background:white;
+                color:gray;
+                padding: 20px;
+            }
+
+            .content h4{
+                margin : 0 0 5px 0;
+            }
+
+            .ex div{
+                background: red;
+                color:black;
+            }
+
+            .ex1 div{
+                display: block;
+            }
+
+            .ex2 div{
+                display: inline;
+                /*width : 100px; inutile */
+            }
+
+            .ex3 div{
+                display: inline-block;
+                width: 100px;
+            }
+
+            .ex4{
+                display: flex;
+                flex-direction: row;
+            }
+
+            .ex4 div{
+                margin : 0 2px;
+                width : 100px;
+            }
+
+            .ex5{
+                display: flex;
+                flex-direction: row-reverse;
+            }
+
+            .ex5 div{
+                width : 100px;
+                margin : 0 2px;
+            }
+
+            .ex6{
+                display: flex;
+                flex-direction: column;
+            }
+
+            .ex6 div{
+                width : 100px;
+            }
+
+            .ex7{
+                display: flex;
+                flex-direction: column-reverse;
+            }
+
+            .ex7 div{
+                width : 100px;
+            }
+
+            .ex8{
+                display: flex;
+                flex-direction: row;
+            }
+
+            .ex8 div{
+                margin :auto;
+                width : 100px;
+            }
+
+            .content footer{
+                background: black;
+                padding : 10px 20px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <header>
+            <img id="logo" src="../image/logoStudy.png" />
+            <nav id="navBar">
+                <a href="../index.html">Accueil</a>
+                <a href="../HTMLSelfStudy.html">HTML</a>
+                <a href="../CSSSelfStudy.html">CSS</a>
+            </nav>
+        </header>
+        <div class="content">
+            <header>header</header>
+            <section class="ex ex1">
+                <h4>Display block</h4>
+                <div>a</div>
+                <div>b</div>
+                <div>c</div>
+            </section>
+            <section class="ex ex2">
+                <h4>Display inline</h4>
+                <div>aaaaa</div>
+                <div>b</div>
+                <div>c</div>
+            </section>
+            <section class="ex ex3">
+                <h4>Display inline-block</h4>
+                <div>a</div>
+                <div>b</div>
+                <div>c</div>
+            </section>
+            <section class="ex ex4">
+                <h4>Display flex row</h4>
+                <div>a</div>
+                <div>b</div>
+                <div>c</div>
+                <div>d</div>
+                <div>e</div>
+            </section>
+            <section class="ex ex5">
+                <h4>Display flex row-reverse</h4>
+                <div>a</div>
+                <div>b</div>
+                <div>c</div>
+            </section>
+            <section class="ex ex6">
+                <h4>Display flex column</h4>
+                <div>a</div>
+                <div>b</div>
+                <div>c</div>
+            </section>
+            <section class="ex ex7">
+                <h4>Display flex column-reverse</h4>
+                <div>a</div>
+                <div>b</div>
+                <div>c</div>
+            </section>
+            <section class="ex ex8">
+                <h4>Display flex margin auto</h4>
+                <div>a</div>
+                <div>b</div>
+                <div>c</div>
+            </section>
+            <section>
+                lower-section
+            </section>
+            <footer>footer</footer>
+        </div>
+    </body>
+</html>

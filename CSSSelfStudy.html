@@ -33,6 +33,7 @@
                     <li><a href="#selector">Sélecteurs</a></li>
                     <li><a href="#property">Propriétés</a></li>
                     <li><a href="#tips">Tips et bonnes pratiques</a></li>
+                    <li><a href="#crashTestWebsite">Sites crash-test</a></li>
                     <li><a href="#webLearningLink">Liens utiles</a></li>
                 </ul>
             </nav>
@@ -191,6 +192,13 @@
                         height : La hauteur par défaut d’un élément est définit par son contenu.<br>
                         width : La largeur par défaut d’un élément est définit par son type (block ou inline).
                     </p>
+                    <p>
+                        Margin, padding : haut droite bas gauche (horloge)
+                    </p>
+                    <p>
+                        Margin et padding : on peut mettre seulement deux valeurs : haut/bas et gauche/droite<br>
+                        Une seule valeur : haut/bas/gauche/droite
+                    </p>
                 </section>
                 <section>
                     <h3>Border :</h3>
@@ -222,7 +230,14 @@
                         clear : both, right, left : reprend le comportement par défaut pour l’élément. (permet d’ignorer un float par exemple)
                     </p>
                     <p>
-                        display : inline,none, inline-block : permet de changer le type de l'élément. (block -> inline, très important à bien maîtriser)
+                        display : inline,none, inline-block : permet de changer le type de l'élément. (block -> inline, très important à bien maîtriser)<br>
+                        Vidéo explicative : <a href="https://www.youtube.com/watch?v=aRMIdKRYg6c&list=PLoYCgNOIyGABDU532eesybur5HPBVfC1G&index=5" target="_blank">Layout with Flexbox (ENG)</a>
+                    </p>
+                    <p>
+                        position : static, absolute, fixed, relative.<br>
+                        absolute permet alors de modifier les propriétés : top, bottom, left, right.<br>
+                        fixed : permet de placer l’élément selon la fenêtre (et non la page). l’élément est ainsi toujours visible.<br>
+                        relative : permet de modifier les propriétés top, bottom, left, right selon sa position initiale.
                     </p>
                 </section>
             </section>
@@ -235,19 +250,21 @@
                     padding : Ne dois pas être utilisé pour “positionner” un élément.
                 </p>
                 <p>
-                    position : static, absolute, fixed, relative.<br>
-                    absolute permet alors de modifier les propriétés : top, bottom, left, right.<br>
-                    fixed : permet de placer l’élément selon la fenêtre (et non la page). l’élément est ainsi toujours visible.<br>
-                    relative : permet de modifier les propriétés top, bottom, left, right selon sa position initiale.
-                </p>
-                <p>
                     z-index : permet de dire quel élément est affiché au dessus plutôt qu’un autre. (priorité)
                 </p>
+                <p>
+                    Mettre des couleurs aux parties est très important pour mieux voir leur comportement.
+                </p>
+            </section>
+            <section class="mainSection" id=crashTestWebsite>
+                <h2>Sites crash-test :</h2>
+                <a href="./crash-test-website/LayoutFlexbox.html">Layout Flexbox</a>
             </section>
             <section class="mainSection" id=webLearningLink>
                 <h2>Liens utiles :</h2>
-                <a href="https://youtu.be/8FqZZrbnwkM?t=3578" target="_blank">Liens tuto CSS part 1</a><br>
-                <a href="https://www.youtube.com/watch?v=HN4-7k0zC-Y" target="_blank">Liens tuto CSS part 2</a>
+                <a href="https://youtu.be/8FqZZrbnwkM?t=3578" target="_blank">Liens tuto CSS part 1 (FR)</a><br>
+                <a href="https://www.youtube.com/watch?v=HN4-7k0zC-Y" target="_blank">Liens tuto CSS part 2 (FR)</a><br>
+                <a href="https://www.youtube.com/playlist?list=PLoYCgNOIyGABDU532eesybur5HPBVfC1G" target="_blank">Playlist tuto CSS HTML court et efficace (ENG)</a>
             </section>
         </div>
     </body>
