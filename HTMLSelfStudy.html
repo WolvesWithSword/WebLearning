@@ -15,7 +15,7 @@
                 <a href="./index.html">Accueil</a>
                 <a class="activePage" href="./HTMLSelfStudy.html">HTML</a>
                 <a href="./CSSSelfStudy.html">CSS</a>
-
+                <a href="./WebDesignSelfStudy.html">Web Design</a>
             </nav>
         </header>
         <div class="content">
@@ -33,6 +33,7 @@
                     <li><a href="#structure">Structuration HTML</a></li>
                     <li><a href="#attribute">Attributs</a></li>
                     <li><a href="#tips">Tips et bonnes pratiques</a></li>
+                    <li><a href="#crashTestWebsite">Sites crash-test</a></li>
                     <li><a href="#webLearningLink">Liens utiles</a></li>
                 </ul>
             </nav>
@@ -45,9 +46,32 @@
                 <p>
                     HTML signifie HyperText Markup Language.
                 </p>
+                <p>
+                    Le "X" de XHTML viens de XML : eXtensible Markup Language.
+                </p>
+                <p>
+                    La première page d'un site doit se nommé "index.html". <br>
+                    En effet c'est sur cette page là sur laquelle tomberont les internautes si il tape l'adresse de 
+                    votre site sans préciser le nom d'un fichier.<br>
+                    Si il n'existe pas , ils tomberont sur une liste de fichier comme ci-dessous:
+                </p>
+                <img src="./image/noIndex.png" alt="no index">
+                <p>
+                    Quel que soit le nombre d'espaces ou de retour à la ligne (autre qu'avec br) dans une balise, le navigateur n'affichera qu'un seul espace. <br>
+                    On peut donc pour plus de lisibilité, en mettre autant que l'on veut dans le code html.
+                </p>
             </section>
             <section class="mainSection" id="tag">
                 <h2>Balises HTML :</h2>
+                <p>
+                    L'utilisation de balises présente plusieurs intérêt :<br>
+                    <ul>
+                        <li>Le code est plus clair</li>
+                        <li>La future maintenance du site sera facilitée</li>
+                        <li>Les moteurs de recherche indexeront mieux les pages</li>
+                    </ul>
+                </p>
+                <h4>Voici plusieurs balises essentielles : </h4>
                 <ul>
                     <li><code>&lt;html&gt;</code> : Définit un document html.</li>
                     <li><code>&lt;head&gt;</code> : Définit l’en-tête d’un document.</li>
@@ -94,9 +118,22 @@
                 </ul>
             </section>
             <section class="mainSection" id="comment">
-                <h2>Commentaires :</h2>
-                <p>On peut écrire un commentaire dans le code HTML avec :<br/><code>&lt;!-- Mon super commentaire --&gt;</code><br/>
+                <h2>Commentaires et caractères spéciaux :</h2>
+                <p>
+                    On peut écrire un commentaire dans le code HTML avec :<br/><code>&lt;!-- Mon super commentaire --&gt;</code><br/>
                     Attention cependant car tout le monde peut voir un code source d'une page HTML donc éviter les données sensibles.
+                </p>
+                <p>
+                    Un caractères spécial commence toujours pas "&" et finis toujours par un ";".
+                </p>
+                <p>
+                    Pour forcer l'affichage de plusieurs espaces successifs sur une ligne, il faut utiliser le caractères spéciale "&amp;nbsp;" <br>
+                    Ce caractères correspond au "non-breaking space". Il a pour propriété d'empecher la coupure en fin de ligne s'il
+                    est placé entre deux mots. <br>
+                    Pratique notamment pour les prix "10 €" ou les heures "10 h".
+                </p>
+                <p>
+                    <a href="https://dev.w3.org/html5/html-author/charref" target="_blank">Les caractères spéciaux</a>
                 </p>
             </section>
             <section class="mainSection" id="structure">
@@ -207,6 +244,17 @@
                     <li><a href="https://validator.w3.org/" target="_blank">Validateur HTML</a></li>
                     <li><a href="https://jigsaw.w3.org/css-validator/" target="_blank">Validateur CSS</a></li>
                 </ul>
+                <p>
+                    Un nom de fichier dois éviter de contenir des espaces et caractères spéciaux.
+                </p>
+                <p>
+                    Les balises s'écrivent toujours en minuscules et doivent être fermées.
+                </p>
+                
+            </section>
+            <section class="mainSection" id=crashTestWebsite>
+                <h2>Sites crash-test :</h2>
+                <a href="./crash-test-website/ReduceSpacing.html">Espaces supprimés</a>
             </section>
             <section class="mainSection" id="webLearningLink">
                 <h2>Liens utiles :</h2>

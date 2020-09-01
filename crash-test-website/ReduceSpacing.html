@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reduce Spacing Crash-Test</title>
+</head>
+<body>
+    <p>Voici                        un 
+
+
+        exemple. <!-- Pas de retour à la ligne ni d'espaces consécutifs -->
+    </p>
+    <p>Voici&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;un autre <br> exemple.</p> <!-- Ajout d'un caractères spécial : espaces insécables -->
+    <p>Jeter un oeil au code source ;)</p>
+</body>
+</html>
