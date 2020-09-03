@@ -1,0 +1,111 @@
+body{
+    margin: 0;
+}
+
+
+div{
+    /*le contenue dans les div est afficher au milieux de la box*/
+    display: flex;
+    justify-content: center; /* alignement horizontal 
+    vas affecter ces fils (h2 dans ce cas)
+    possibiliter de mettre justify-self dans les fils a la place
+    */
+    align-items: center;/* alignement verticale
+    possibiliter de mettre align-self dans les fils a la place
+    */
+}
+
+section{
+    margin-top: 50px;
+    border-style: solid;
+}
+
+.box1{
+    background-color: red;
+}
+
+.box2{
+    background-color: blue;
+}
+
+.box3{
+    background-color: green;
+}
+
+
+
+
+/*----------------------test1 css-------------------*/
+.test1{
+    height: 200px;
+    display: grid;
+    /*2 colonne de 2/3 et 1/3 de la taille*/
+    grid-template-columns: 2fr 1fr; 
+    /*3 colonne de 2 de 200px l'autre prend le reste de la taille*/
+    /*grid-template-columns: 200px 200px 1fr; */
+    /* premiere ligne 2/3 de la taille (500px) deuxieme 1/3*/
+    grid-template-rows: 2fr 1fr;
+}
+
+.test1 .box3{
+    /*permet de choisir la taille en largeur*/
+    /*
+    grid-column-start: 1;
+    grid-column-end: 3;
+    */
+    /* ou:*/
+    grid-column: 1/3;
+}
+
+
+/*----------------------test2 css-------------------*/
+.test2{
+    height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+
+    grid-template-rows: 1fr 1fr;
+}
+/*
+.test2 .box2{
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+*/
+/* ou : */ 
+.test2 .box1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.test2 .box2{
+    grid-row: 1/3;
+}
+
+/*----------------------test3 css-------------------*/
+/*une representation plus graphique*/
+.test3{
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr); /*equivaut a 1fr 1fr 1fr*/
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "test3box1 test3box2 test3box2"
+    "test3box1 test3box2 test3box2"
+    ". test3box3 test3box3";
+    /*la representation doit etre valide une box est ractangulaire sans trou au milieux*/
+}
+
+
+.test3 .box1{
+    grid-area: test3box1;
+}
+
+.test3 .box2{
+    grid-area: test3box2;
+}
+
+.test3 .box3{
+    grid-area: test3box3;
+}
+
