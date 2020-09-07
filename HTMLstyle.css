@@ -129,3 +129,10 @@ header{
 #webLearningLink a{
     line-height: 27px;
 }
+
+
+#table img{
+    display: block;
+    max-width: 40%;
+    height: auto;
+}

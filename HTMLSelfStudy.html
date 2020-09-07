@@ -33,6 +33,7 @@
                     <li><a href="#structure">Structuration HTML</a></li>
                     <li><a href="#attribute">Attributs</a></li>
                     <li><a href="#tips">Tips et bonnes pratiques</a></li>
+                    <li><a href="#table">Tableaux HTML</a></li>
                     <li><a href="#crashTestWebsite">Sites crash-test</a></li>
                     <li><a href="#webLearningLink">Liens utiles</a></li>
                 </ul>
@@ -82,8 +83,8 @@
                     <li><code>&lt;p&gt;</code> : Définit un paragraphe.</li>
                     <li><code>&lt;h1&gt; à &lt;h6&gt;</code> : Définit un titre par degré importance de 1 à 6.</li>
                     <li><code>&lt;a&gt;</code> : Définit un lien.</li>
-                    <li><code>&lt;ul&gt;</code> : Définit une liste non-ordonné.</li>
-                    <li><code>&lt;ol&gt;</code> : Définit une liste ordonné.</li>
+                    <li><code>&lt;ul&gt;</code> (unordered list): Définit une liste non-ordonné.</li>
+                    <li><code>&lt;ol&gt;</code> (ordered list): Définit une liste ordonné.</li>
                     <li><code>&lt;li&gt;</code> : Élément d’une liste.</li>
                     <li><code>&lt;code&gt;</code> : Mise en forme d’un texte en code informatique.</li>
                     <li><code>&lt;pre&gt;</code> : Texte pré-formaté.</li>
@@ -110,11 +111,18 @@
                     <li><code>&lt;dl&gt;</code> : Définit une liste de définition</li>
                     <li><code>&lt;dt&gt;</code> : Définit le titre d'une définition</li>
                     <li><code>&lt;dd&gt;</code> : Définit le texte d'une définition</li>
-                    <li><code>&lt;strong&gt;</code> : Permet d’indiquer à un moteur de recherche qu’un contenu est particulièrement important.</li>
-                    <li><code>&lt;em&gt;</code> : Ressemble à strong mais moins important.</li>
+                    <li><code>&lt;strong&gt;</code> (stronger emphasis): Permet d’indiquer à un moteur de recherche qu’un contenu est particulièrement important.</li>
+                    <li><code>&lt;em&gt;</code> (emphasis): Ressemble à strong mais moins important.</li>
                     <li><code>&lt;mark&gt;</code> : Sert à faire ressortir du contenu.</li>
-                    <li><code>&lt;div&gt;</code> : Sert à englober un bloc de contenu.</li>
+                    <li><code>&lt;div&gt;</code> (division): Sert à englober un bloc de contenu.</li>
                     <li><code>&lt;span&gt;</code> : Sert à englober du contenu.</li>
+                    <li><code>&lt;base&gt;</code> : Définit un dossier par défaut pour l'ensemble des liens.</li>
+                    <li><code>&lt;sup&gt;</code> : Met un caractères en exposant.</li>
+                    <li><code>&lt;sub&gt;</code> : Met un caractères en indice.</li>
+                    <li><code>&lt;small&gt;</code> : Réduit la taille d'un texte.</li>
+                    <li><code>&lt;blockquote&gt;</code> : Permet de faire une citation.</li>
+                    <li><code>&lt;hr&gt;</code> (Horizontal rule): Trace un trait de séparation sur toute la largeur.</li>
+
                 </ul>
             </section>
             <section class="mainSection" id="comment">
@@ -131,6 +139,13 @@
                     Ce caractères correspond au "non-breaking space". Il a pour propriété d'empecher la coupure en fin de ligne s'il
                     est placé entre deux mots. <br>
                     Pratique notamment pour les prix "10 €" ou les heures "10 h".
+                </p>
+                <p>
+                    Quelques caractères spéciaux communs : 
+                    <ul>
+                        <li>&amp;ccedil; = ç</li>
+                        <li>&amp;euro; = €</li>
+                    </ul>
                 </p>
                 <p>
                     <a href="https://dev.w3.org/html5/html-author/charref" target="_blank">Les caractères spéciaux</a>
@@ -182,14 +197,32 @@
                     </p>
                 </section>
                 <section>
-                    <h3>Attributs de la balise &lt;a&gt;</h3>
+                    <h3>Attributs de la balise &lt;ol&gt;, &lt;ul&gt; et &lt;li&gt;</h3>
                     <p>
-                        L'attribut "href" permet de définir le lien d'une balise &lt;a&gt;.<br/>
-                        <code>&lt;a href="monSuperLien"&gt;Le texte du lien&lt;/a&gt;</code><br/>
-                        On peut également faire référence à une autre page HTML ou bien un élément de la page (Ancre) dans href afin de faciliter la navigation.
+                        L'attribut start="..." sert à indiquer le numéro de départ.<br/>
                     </p>
                     <p>
-                        Pour créer une ancre il suffit de donner l'id de la cible avec un # devant dans href.
+                        L'attribut "reverse" sert à avoir une numérotation décroissante.
+                    </p>
+                    <p>
+                        L'attribut type="..." permet de changer le style de numérotation. (1,2,3 / A,B,C...).
+                    </p>
+                    <p>
+                        L'attribut "value" d'une balise li permet de spécifier un numéro pour une ligne donné.
+                    </p>
+                </section>
+                <section>
+                    <h3>Attributs de la balise &lt;a&gt;</h3>
+                    <p>
+                        L'attribut "href" (HyperText reference) permet de définir le lien d'une balise &lt;a&gt;.<br/>
+                        <code>&lt;a href="monSuperLien"&gt;Le texte du lien&lt;/a&gt;</code><br/>
+                        On peut également faire référence à une autre page HTML ou bien un élément de la page (Ancre) dans href afin de faciliter la navigation. <br>
+                        Noter qu'il faut utiliser des "/" et des non des "\" dans les chemins de fichiers.
+                    </p>
+                    <p>
+                        Pour créer une ancre il suffit de donner l'id de la cible avec un # devant dans href. <br>
+                        Il est également possible de combiner un chemin de fichier avec une ancre : <br>
+                        <code>&lt;a href="monSuperLien#maSuperAncre"&gt;Le texte du lien&lt;/a&gt;</code>
                     </p>
                     <p>
                         Pour créer un lien de téléchargment, il suffit de donner le lien du fichier à télécharger dans href.<br/>
@@ -197,23 +230,34 @@
                     </p>
                     <p>
                         Pour ouvrire un lien dans une nouvelle page, on utiliser l'attribut "target" avec la valeur "blank".<br/>
-                        <code>&lt;a href="monSuperLien" target="_blank"&gt;mon super texte&lt;/a&gt;</code>
+                        <code>&lt;a href="monSuperLien" target="_blank"&gt;mon super texte&lt;/a&gt;</code> <br>
+                        target sert aussi au &lt;iframe&gt; (déconseillées).
                     </p>
                     <p>
                         Pour qu'un lien envoie un mail à une certaine adresse, on ajoute "mailto:" puis le mail dans l'attribut "href".<br/>
-                        <code>&lt;a href ="mailto:exemple@mail.com"&gt;mon super texte&lt;/a&gt;</code>
+                        <code>&lt;a href ="mailto:exemple@mail.com"&gt;mon super texte&lt;/a&gt;</code> <br>
+                        Le logiciel de messagerie par défaut sur l'ordinateur de l'utilisateur sera utilisé. <br>
+                        Il est possible d'ajouter un sujet et d'autre destinataire avec le séparateur "?" après l'adresse mail
+                        puis avec le séparateur "&" avant chaque nouveau paramètre. <br>
+                        <code>&lt;a href ="mailto:exemple@mail.com?subject=Mon message&CC=titi@gmail.com"&gt;mon super texte&lt;/a&gt;</code>
                     </p>
                     <p>
                         Pour qu'un lien amène à un numéro de téléphone, on ajoute "tel:" puis le numéro dans l'attribut "href".<br/>
                         <code>&lt;a href ="tel:0123456789"&gt;mon super texte&lt;/a&gt;</code>
                     </p>
+                    <p>
+                        L'attribut title permet d'affichier automatiquement du texte dans une bulle au passage de la souris.
+                    </p>
                 </section>
                 <section>
                     <h3>Autres</h3>
                     <p>
-                        l'attribut "lang" précise la langue utilisée pour le contenu de la page, il est placé sur la balise &lt;html&gt;.<br/>
+                        L'attribut "lang" précise la langue utilisée pour le contenu de la page, il est placé sur la balise &lt;html&gt;.<br/>
                         <code>&lt;html lang="fr"&gt;</code><br/>
                         Une langue bien indiquée sera utile aux synthèses vocales (pour adopter le bon accent).
+                    </p>
+                    <p>
+                        L'attribut "cite" de la balise &lt;blockquote&gt; permet de donner la référence de la citation.
                     </p>
                 </section>
             </section>
@@ -250,7 +294,46 @@
                 <p>
                     Les balises s'écrivent toujours en minuscules et doivent être fermées.
                 </p>
-                
+                <p>
+                    Un paragraphe &lt;p&gt; ne contient jamais d'autre paragraphes.
+                </p>
+                <p>
+                    Une balise &lt;small&gt; doit correspondre à un contenu accessoire et indépendant du contenu principal
+                    et ne dois pas servir à de la mise en forme.
+                </p>
+                <p>
+                    Les balises &lt;dt&gt; et &lt;dd&gt; servent aussi pour des dialogues. 
+                    ("dt" pour dialog talker et "dd" pour dialog discourse)
+                </p>
+            </section>
+            <section class="mainSection" id="table">
+                <h2>Tableaux HTML :</h2>
+                <p>
+                    L'utilisation de tableaux est réserver à la présentation de données et non à de la mise en forme. <br>
+                    Délimité par la balise &lt;table&gt;, initialement les bordures sont invisibles. On peut changer l'épaisseur avec
+                    l'attribut "border" (mais privilégier le CSS).
+                </p>
+                <p>
+                    La table se construit ligne par ligne à l'aide de la balise &lt;tr&gt; (table row). <br>
+                    Chaque lignes contient une cellule &lt;td&gt; (table data).
+                    Lorsqu'il s'agit d'une cellule de titre on utiliser &lt;th&gt; (table header).
+                </p>
+                <p>
+                   Les balises &lt;thead&gt; et &lt;tfoot&gt; servent pour l'en-tête et le pied de tableau. <br>
+                   Elles sont écrites avant le corps du tableau (qui doit alors être dans un &lt;tbody&gt;).
+                </p>
+                <p>
+                    La balise &lt;caption&gt; est facultative et permet de définir un titre associé au tableau.
+                </p>
+                <p>
+                    Pour mettre une mise en forme à des colonnes précises, on peut utiliser des balises &lt;col&gt; 
+                    réunit dans une balise &lt;colgroup&gt;
+                </p>
+                <p>
+                    Les attributs "colspan" et "rowspan" d'une balise &lt;td&gt; servent respectivement 
+                    à fusionner les cellules de plusieurs colonnes et plusieurs lignes.
+                    <img src="./image/tableHTML.png" alt="table HTML">
+                </p>
             </section>
             <section class="mainSection" id=crashTestWebsite>
                 <h2>Sites crash-test :</h2>
