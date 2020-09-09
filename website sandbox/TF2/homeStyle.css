@@ -4,6 +4,8 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100%;
+    color: blanchedalmond;
+    font-family: cursive;
 }
 
 /*@media screen and (max-width:500) {
@@ -26,14 +28,21 @@ header{
     text-align: center;
 }
 
+.intro h2{
+    margin : 0px 0px 20px 0px;
+}
+
+.intro p {
+    line-height: 25px;
+}
+
+
 section{
-    
-    
-    border-color: black;
     border-style: solid;
+    border-color: black;
     margin: 10px auto;
     padding: 20px;
-    background-color: rgba(143, 141, 141, 0.837);
+    background-color: rgba(43, 42, 42, 0.959);
     width: calc(80% - 40px);
 }
 
@@ -50,10 +59,20 @@ section{
     height: 90%;
     margin: 0 10px 0 10px;
     border-style: solid;
+    background-image : url("./img/characterBackground.png");
+    background-size: 100% 100%;
 }
 
 .characterslist li img{
     max-width: 100%;
     min-height: 85%;
     max-height: 85%;
+}
+
+.characterslist li h3{
+    margin-top: 10px;
+    font-size: 3em;
+    font-family: cursive;
+    border-style: solid;
+    border-color: blanchedalmond;
 }
