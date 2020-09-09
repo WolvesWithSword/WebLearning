@@ -3,16 +3,14 @@ body{
     background-image: url("./img/backgroundHome.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-position: center center;
+    /*rescale de l'image celon la taille de l'ecran*/
+    background-size: cover;
+    /*possibilite de mettre un background-color le temps que limage charge*/
     color: blanchedalmond;
     font-family: cursive;
 }
 
-/*@media screen and (max-width:500) {
-    body{
-        background-size: 100%;
-    }
-}*/
 
 
 header>img{
@@ -61,18 +59,41 @@ section{
     border-style: solid;
     background-image : url("./img/characterBackground.png");
     background-size: 100% 100%;
+    display: block;
+    text-align: center;
 }
 
 .characterslist li img{
+    max-height: 100%;
     max-width: 100%;
-    min-height: 85%;
-    max-height: 85%;
+}
+
+.characterslist li .imgbox{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 85%;
+    width: 100%;
+    margin:0px;
+}
+
+.center-box{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.characters-namebox{
+    height: 15%;
+    margin: 0px;
+    /*on double pas les coté et le bas*/
+    border-style: solid none none none;
+    border-color: blanchedalmond;
 }
 
 .characterslist li h3{
-    margin-top: 10px;
+    margin: auto;
     font-size: 3em;
     font-family: cursive;
-    border-style: solid;
-    border-color: blanchedalmond;
+
 }
